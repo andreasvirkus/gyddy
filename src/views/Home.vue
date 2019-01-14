@@ -29,7 +29,7 @@
     background-color: #fefefe;
     color: cornflowerblue;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 2px;
     font-size: 3rem;
 
     &:not(:first-child) {

@@ -6,9 +6,12 @@
         <span class="logo__text">Gyddy</span>
       </router-link>
 
-      <nav class="app__nav">
+      <nav class="app__nav f-v-align">
+        <router-link to="/"
+          v-if="$route.path !== '/'"
+          class="m-right-m">👈 Back</router-link>
         <router-link to="/about">
-          <img alt="Source code" class="icon-m" src="./assets/github.svg">
+          <img alt="Source code" class="icon-xl" src="./assets/github.svg">
         </router-link>
       </nav>
     </header>
@@ -46,7 +49,6 @@ body {
   }
   &__nav {
     margin-left: auto;
-    padding: 30px;
   }
   &__content {
     flex: 1;
@@ -67,29 +69,5 @@ a {
     padding-left: .5rem;
     font-size: 1.25rem;
   }
-}
-
-// Move these to global.scss file
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-// Move these to utils.scss file
-.icon-m {
-  height: 1rem;
-  width: 1rem;
-}
-.f-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 </style>

@@ -1,0 +1,164 @@
+.icon-m {
+  height: 1rem;
+  width: 1rem;
+}
+.icon-l {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.icon-xl {
+  height: 2rem;
+  width: 2rem;
+}
+
+
+/* TODO: Move these to utilities file(s) */
+.bg-none {
+  background-color: transparent;
+}
+.border-bottom {
+  border-bottom: 1px solid rgba(109,123,145,0.1);
+}
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-background {
+  color: var(--color-background);
+}
+.color-disabled {
+  color: var(--color-disabled);
+}
+.color-faded {
+  color: var(--color-faded);
+}
+.color-content {
+  color: var(--color-content);
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.weight-s {
+  font-weight: 300;
+}
+.weight-default {
+  font-weight: 400;
+}
+.weight-m {
+  font-weight: 500;
+}
+.font-s {
+  font-size: .875rem;
+}
+.font-xs {
+  font-size: .75rem;
+}
+.font-l {
+  font-size: 1.25rem;
+}
+
+.f-v-align {
+  display: flex !important;
+  align-items: center !important;
+}
+.f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-space {
+  display: flex;
+  justify-content: space-between;
+}
+.f-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.f-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.f-col {
+  display: flex;
+  flex-direction: column;
+}
+.f-grow {
+  flex-grow: 1;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.m-right-xxs {
+  margin-right: .25rem;
+}
+.m-right-xs {
+  margin-right: .5rem;
+}
+.m-right-s {
+  margin-right: .75rem;
+}
+.m-right-m {
+  margin-right: 1.5rem;
+}
+.m-right-l {
+  margin-right: 3rem;
+}
+.m-right-a {
+  margin-right: auto;
+}
+.m-left-xxs {
+  margin-left: .25rem;
+}
+.m-left-xs {
+  margin-left: .5rem;
+}
+.m-left-s {
+  margin-left: .75rem;
+}
+.m-left-m {
+  margin-left: 1.5rem;
+}
+.m-left-xxs {
+    margin-left: .25rem;
+}
+.m-left-xs {
+  margin-left: .5rem;
+}
+.m-left-a {
+  margin-left: auto;
+}
+.m-top-s {
+  margin-top: .75rem;
+}
+.m-top-m {
+  margin-top: 1.5rem;
+}
+.m-top-l {
+  margin-top: 3rem;
+}
+.m-bottom-s {
+  margin-bottom: .75rem;
+}
+.m-bottom-m {
+  margin-bottom: 1.5rem;
+}
+.m-bottom-l {
+  margin-bottom: 3rem;
+}
