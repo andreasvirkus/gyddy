@@ -1,13 +1,18 @@
 <template>
-  <div id="app">
-    <header>
+  <div class="app">
+    <header class="app__header">
       <img alt="Gyddy" class="logo" src="./assets/logo.svg">
-      <nav id="nav">
+      <span class="logo__text">Gyddy</span>
+      <nav class="app__nav">
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
       </nav>
     </header>
-    <router-view/>
+    <router-view class="app__content"/>
+
+    <footer class="app__footer">
+      <a href="mailto:write@andreasvirkus.me">Contact</a>
+    </footer>
   </div>
 </template>
 
@@ -15,18 +20,33 @@
 body {
   margin: 0;
 }
-#app {
+.app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: #223;
-  padding: 1rem;
   color: #fefefe;
-}
-#nav {
-  padding: 30px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  &__nav {
+    margin-left: auto;
+    padding: 30px;
+  }
+  &__content {
+    flex: 1;
+  }
+  &__footer {
+    padding: 2rem;
+  }
 }
 a {
   font-weight: bold;
@@ -37,6 +57,12 @@ a {
 }
 .logo {
   height: 3rem;
+
+  &__text {
+    font-family: monospace;
+    padding-left: .5rem;
+    font-size: 1.25rem;
+  }
 }
 h3 {
   margin: 40px 0 0;
