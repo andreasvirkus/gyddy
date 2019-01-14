@@ -3,10 +3,10 @@
     <section class="home__actions">
       <router-link
         class="home__link"
-        :to="{ name: 'regimes' }">Set up</router-link>
+        :to="{ name: 'workouts' }">Set up</router-link>
       <router-link
         class="home__link"
-        :to="{ name: 'workout' }">Work out</router-link>
+        :to="{ name: 'train' }">Work out</router-link>
       <router-link
         class="home__link"
         :to="{ name: 'about' }">About</router-link>
@@ -19,7 +19,7 @@
   &__actions {
     display: flex;
     flex-direction: column;
-    max-width: 10rem;
+    max-width: 30rem;
     margin: 1rem auto;
   }
 
@@ -30,9 +30,10 @@
     color: cornflowerblue;
     text-decoration: none;
     border-radius: 4px;
+    font-size: 3rem;
 
     &:not(:first-child) {
-      margin-top: .5rem;
+      margin-top: 1.5rem;
     }
   }
 }

@@ -1,14 +1,18 @@
 <template>
   <div class="app">
     <header class="app__header">
-      <img alt="Gyddy" class="logo" src="./assets/logo.svg">
-      <span class="logo__text">Gyddy</span>
+      <router-link to="/" class="f-center">
+        <img alt="Gyddy" class="logo" src="./assets/logo.svg">
+        <span class="logo__text">Gyddy</span>
+      </router-link>
+
       <nav class="app__nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link to="/about">
+          <img alt="Source code" class="icon-m" src="./assets/github.svg">
+        </router-link>
       </nav>
     </header>
-    <router-view class="app__content"/>
+    <router-view class="app__content" :key="$route.fullPath"/>
 
     <footer class="app__footer">
       <a href="mailto:write@andreasvirkus.me">Contact</a>
@@ -16,6 +20,9 @@
   </div>
 </template>
 
+<style src="./styles/variables.css"></style>
+<style src="./styles/utils.scss" lang="scss"></style>
+<style src="./styles/global.scss" lang="scss"></style>
 <style lang="scss">
 body {
   margin: 0;
@@ -28,8 +35,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #223;
-  color: #fefefe;
+  background-color: var(--color-background);
+  color: var(--color-content);
 
   &__header {
     display: flex;
@@ -50,10 +57,7 @@ body {
 }
 a {
   font-weight: bold;
-  color: cornflowerblue;
-  &.router-link-exact-active {
-    color: cornflowerblue;
-  }
+  color: var(--color-content);
 }
 .logo {
   height: 3rem;
@@ -64,6 +68,8 @@ a {
     font-size: 1.25rem;
   }
 }
+
+// Move these to global.scss file
 h3 {
   margin: 40px 0 0;
 }
@@ -74,5 +80,16 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+}
+
+// Move these to utils.scss file
+.icon-m {
+  height: 1rem;
+  width: 1rem;
+}
+.f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

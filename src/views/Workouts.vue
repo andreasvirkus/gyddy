@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="workout">
     <h1>List your workouts, switch between them and create new ones.</h1>
   </div>
 </template>
