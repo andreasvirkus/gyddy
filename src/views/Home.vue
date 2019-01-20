@@ -2,13 +2,13 @@
   <div class="home">
     <section class="home__actions">
       <router-link
-        class="home__link"
+        class="home__link gy-btn gy-btn--big"
         :to="{ name: 'workouts' }">Set up</router-link>
       <router-link
-        class="home__link"
+        class="home__link gy-btn gy-btn--big"
         :to="{ name: 'train' }">Work out</router-link>
       <router-link
-        class="home__link"
+        class="home__link gy-btn gy-btn--big"
         :to="{ name: 'about' }">About</router-link>
     </section>
   </div>
@@ -23,18 +23,8 @@
     margin: 1rem auto;
   }
 
-  &__link {
-    display: inline-block;
-    padding: .5rem 1rem;
-    background-color: #fefefe;
-    color: cornflowerblue;
-    text-decoration: none;
-    border-radius: 2px;
-    font-size: 3rem;
-
-    &:not(:first-child) {
-      margin-top: 1.5rem;
-    }
+  &__link:not(:first-child) {
+    margin-top: 1.5rem;
   }
 }
 </style>

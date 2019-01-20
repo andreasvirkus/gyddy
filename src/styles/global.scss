@@ -9,3 +9,27 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.gy-btn {
+  display: inline-block;
+  padding: .5rem 3rem;
+  background-color: #fefefe;
+  color: cornflowerblue;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  &--big {
+    font-size: 3rem;
+  }
+}
