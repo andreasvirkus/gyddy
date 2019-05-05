@@ -27,13 +27,7 @@
 <style src="./styles/utils.scss" lang="scss"></style>
 <style src="./styles/global.scss" lang="scss"></style>
 <style lang="scss">
-body {
-  margin: 0;
-}
 .app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -52,6 +46,9 @@ body {
   }
   &__content {
     flex: 1;
+    max-width: 40rem;
+    align-self: center;
+    width: 94%;
   }
   &__footer {
     padding: 2rem;

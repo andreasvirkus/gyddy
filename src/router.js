@@ -19,7 +19,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/train',
+      path: '/train/:workout?',
       name: 'train',
       component: () => import(/* webpackChunkName: "workout" */ './views/Train.vue')
     },
@@ -27,6 +27,12 @@ export default new Router({
       path: '/workouts',
       name: 'workouts',
       component: () => import(/* webpackChunkName: "workouts" */ './views/Workouts.vue')
+    },
+    {
+      path: '/workouts/create',
+      name: 'new-workout',
+      component: () => import(/* webpackChunkName: "workouts" */ './views/Workouts.vue'),
+      props: { create: true }
     }
   ]
 })
