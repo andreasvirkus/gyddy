@@ -1,3 +1,29 @@
+/* Handicraft reset */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+body,
+body * {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+textarea {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h3 {
   margin: 40px 0 0;
 }
