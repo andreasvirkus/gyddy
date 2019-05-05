@@ -1,5 +1,14 @@
 # gyddy
 
+🏋️‍♂️ Gyddy is your friendly neighbourhood Gym Buddy
+
+## TODO
+- Sync exercises to localStorage
+- Sync workouts to localStorage
+- Add timer, sets, reps
+- Add firebase & Google auth for persistence
+
+
 ## Project setup
 ```
 npm install
